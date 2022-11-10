@@ -107,10 +107,45 @@ justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   padding:30px;
+  margin:20px;
+  border-radius: 10px;
+  border-color: black;
+  border-style:solid;
+  background-color: grey;
+  display:flex;
 }
 
 .blogImage {
   margin-bottom: 30px;
   width:100%;
   height:auto;
+  border-radius: 10px;
+  border-color: black;
+  border-style: solid;
+}
+
+.loader-circle {
+  border: 20px solid whitesmoke;
+  border-top:20px solid rgb(44, 140, 194);
+  border-radius:50%;
+  width:150px;
+  height:150px;
+  animation: spin 2s linear infinite;
+  display:flex;
+}
+
+h2 {
+  font-style: italic;
+  text-align: center;
+  
+}
+
+@keyframes spin {
+  0% {transform:rotate(0deg);}
+  100% {transform:rotate(360deg);}
+}
+
+@media only screen and (max-width: 600px) {
+
+
 }

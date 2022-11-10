@@ -14,16 +14,15 @@ async function fetchInformation() {
       id = reposonseAsJson[i].id;
       mediaId = reposonseAsJson[i].featured_media;
       summary = reposonseAsJson[i].excerpt.rendered;
-      //image = reposonseAsJson[i]._links["wp:featuredmedia"][0].href;
-
+      
       image = await fetchMedia(mediaId);
       console.log(id);
       resultsContainer.innerHTML += `<div class = blogPost> <a href="blogSpecific.html?id=${id}"> 
             <img class=blogImage src="${image}"</img>
             <div class="Champion"> <h2> ${name} <h2> </div>
-      <div class="Summary" ${summary} </div>`;
+      `;
     }
-    //<div class="blogPost"></div>
+    //<div class="Summary" ${summary} </div></div>
 
   } catch (error) {
     resultsContainer.innerHTML = "An error har occured";
@@ -42,6 +41,12 @@ async function fetchMedia(postId) {
         console.log(error);
         
     }
+
+    const loading = document.querySelector(".loader");
+
+    setTimeout(function () {
+      loading.classList.remove("loader-circle");
+    }, 2000);
 }
 
 fetchInformation();
