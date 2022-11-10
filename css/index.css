@@ -92,3 +92,25 @@ input[type="submit"] {
   padding: 20px;
   margin: 100px;
 }
+
+.blogContainer {
+width:100%;
+display:flex;
+flex-wrap: wrap;
+margin-left: auto;
+margin-right: auto;
+justify-content: center;
+}
+
+.blogPost {
+  width:40%;
+  align-items: center;
+  flex-wrap: wrap;
+  padding:30px;
+}
+
+.blogImage {
+  margin-bottom: 30px;
+  width:100%;
+  height:auto;
+}
