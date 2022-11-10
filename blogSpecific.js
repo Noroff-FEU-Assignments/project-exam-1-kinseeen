@@ -12,10 +12,10 @@ async function BlogPost (test) {
         const response = await fetch (`https://www.kinejakobsenleagueoflegends.tech/wp-json/wp/v2/posts/${test}`)
         const reposonseAsJson = await response.json();
         console.log(reposonseAsJson);
-        createHTML(reposonseAsJson)
+        //createHTML(reposonseAsJson)
     } catch (error) { 
         detailsContainer.innerHTML = "An error has occured";
     } 
 }
 
-BlogPost();
+BlogPost(id);

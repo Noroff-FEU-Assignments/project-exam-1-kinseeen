@@ -11,13 +11,13 @@ async function fetchInformation() {
     resultsContainer.innerHTML = "";
     for (let i = 0; i < reposonseAsJson.length; i++) {
       name = reposonseAsJson[i].title.rendered;
-      id = reposonseAsJson[i].id;
+      id1 = reposonseAsJson[i].id;
       mediaId = reposonseAsJson[i].featured_media;
       summary = reposonseAsJson[i].excerpt.rendered;
       
       image = await fetchMedia(mediaId);
-      console.log(id);
-      resultsContainer.innerHTML += `<div class = blogPost> <a href="blogSpecific.html?id=${id}"> 
+      console.log(id1);
+      resultsContainer.innerHTML += `<div class = blogPost> <a href="blogSpecific.html?id=${id1}"> 
             <img class=blogImage src="${image}"</img>
             <div class="Champion"> <h2> ${name} <h2> </div>
       `;
