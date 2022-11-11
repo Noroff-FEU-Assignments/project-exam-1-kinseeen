@@ -20,8 +20,6 @@ The blog posts page should show the first 10 blogs, and the user should click to
 
 ### Blog Specific Page
 
-The content of the blog specific page should be dynamically built using a query string parameter based on whatever link the user clicked. The title of the blog specific page should change based on the blog that has been clicked on e.g. “My Blog | An Article I Wrote”.
-
 If images on the blog post page are clicked, a modal should appear giving the user a bigger view of that image. Clicking outside the image should hide the modal.
 
 ### WordPress
@@ -38,10 +36,9 @@ Note that this is an exam, and therefore tutor support will be limited as per th
 
 ## Level 1 Process
 
-1.	Decide on the theme for the blog you’re going to make
-2.	Create a prototype of the website
-3.	Install WordPress on your web host and add the blogs on the admin panel. 
-4.	Use the GitHub repo created by GitHub Classroom for your files and deploy to Netlify
+
+
+
 5.	Build your website using HTML, CSS and JavaScript making a call to the WordPress REST API to fetch your data.
 6.	Install Hotjar on your website.
 7.	Ask users to test your website, and adjust based on their feedback and any insights from Hotjar.

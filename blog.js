@@ -18,11 +18,11 @@ async function fetchInformation() {
       image = await fetchMedia(mediaId);
       console.log(id1);
       resultsContainer.innerHTML += `<div class = blogPost> <a href="blogSpecific.html?id=${id1}"> 
-            <img class=blogImage src="${image}"</img>
+            <img class=blogImage src="${image}" alt = "Image of champion" </img>
             <div class="Champion"> <h2> ${name} <h2> </div>
       `;
     }
-    //<div class="Summary" ${summary} </div></div>
+   
 
   } catch (error) {
     resultsContainer.innerHTML = "An error har occured";
