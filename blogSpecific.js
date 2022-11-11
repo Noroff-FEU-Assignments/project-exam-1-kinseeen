@@ -1,21 +1,11 @@
 const querystring = document.location.search;
 const params = new URLSearchParams(querystring);
-var modal = document.getElementById("modalImage");
 const id = params.get("id");
+
 
 console.log(id);
 
 const detailsContainer = document.querySelector(".blogDetails");
-
-// var img = document.getElementById("productImage");
-// var modalImg = document.getElementById("ChampionModalImage");
-// var captionText = document.getElementById("caption");
-// img.onclick = function(){
-//   modal.style.display = "block";
-//   modalImg.src = this.src;
-//   captionText.innerHTML = this.alt;
-// }
-
 
 async function BlogPost(test) {
   try {
@@ -56,6 +46,7 @@ async function fetchMedia(id) {
   } catch (error) {
     console.log(error);
   }
+
 }
 
 BlogPost(id);
