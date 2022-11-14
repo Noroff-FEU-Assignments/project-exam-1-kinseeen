@@ -1,35 +1,36 @@
 body {
-  background-color: rgb(31, 31, 31);
+  background-color: white;
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica, arial sans-serif;
   font-size: 20px;
 }
 
 h1 {
-  color: #e6ebed;
+  color: black;
   text-align: center;
   padding: 20px;
   border-bottom-width: 8px;
   border-bottom-style: solid;
-  border-color: rgb(44, 140, 194);
+  border-color: #007BA8;
 }
 
 p {
-  color: white;
+  color: black;
   text-align: center;
   padding: 30px;
+  margin-left:80px;
+  margin-right: 80px;
   line-height: 1.5;
-  font-size: 30px;
+  font-size: 25px;
 }
-
 
 ul {
   list-style-type: none;
   margin: 0;
   padding: 10px;
   overflow: hidden;
-  background-color: rgb(26, 25, 25);
+  background-color: #007BA8;
   text-align: center;
 }
 
@@ -45,15 +46,91 @@ a {
   color: #ffffff;
   padding: 20px;
   text-decoration: none;
+  font-size: 20px;
 }
 
-li:hover {
-  background-color: #808080;
+a:hover {
   border-radius: 10%;
-  /* border-bottom-width: 6px;
-  border-bottom-style: solid;
-  border-color: rgb(44, 140, 194); */
+  color: black;
+  text-decoration:underline;
+  text-decoration-color: black;
 }
+
+/* #slider {
+  height:500px;
+  border: 1px solid white;
+  display:flex;
+  justify-content:center;
+}
+
+.container {
+  width:1600px;
+  margin:auto;
+}
+
+.subcontainer{
+  width:85%;
+  margin:auto;
+}
+
+.controller{
+  display:flex;
+  justify-content: space-between;
+}
+
+#controls i {
+  color:white;
+  font-size: 1rem;
+}
+
+.previous, .next{
+  padding:2px;
+  width:30px;
+  cursor: pointer;
+  border-radius:50%;
+  outline:none;
+  transition:0.7s ease-in-out;
+  border: 3px solid black;
+  background-color: rgb(44, 140, 194);
+}
+
+.previous:hover, .next:hover{
+  border: 3px solid gray;
+}
+
+.slide-img{
+  width:100%;
+  height:275px;
+  border:1px solid black;
+  background-position: center;
+  background-size: cover;
+  cursor:pointer;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  transition:0.5s;
+} */
+
+.slide-img:hover {
+  box-shadow: 0 0 0 5px black;
+}
+
+.slide-img a{
+  transform:scale(0);
+  transition:0.8s;
+  font-size:1.5rem;
+  color:white;
+  opacity: 0;
+}
+
+.slide-img:hover a {
+  opacity:1;
+  transform:scale(1);
+}
+
+
+
+
 
 input[type="text"],
 select,
@@ -73,11 +150,12 @@ textarea {
   color: black;
   margin-top: 2px;
   margin-bottom: 10px;
-  text-shadow: 2px 2px red;
+  text-decoration: underline;
+  text-decoration-color: red;
 }
 
 input[type="submit"] {
-  background-color: rgb(44, 140, 194);
+  background-color: #007BA8;
   color: white;
   font-size: large;
   padding: 12px 20px;
@@ -88,37 +166,41 @@ input[type="submit"] {
 
 .contactForm {
   border-radius: 5px;
-  background-color: grey;
+  border-style: solid;
+  border-color: black;
+  background-color: #A69686;
   padding: 20px;
   margin: 100px;
+  border-radius: 2px;
 }
 
 .blogContainer {
-width:100%;
-display:flex;
-flex-wrap: wrap;
-margin-left: auto;
-margin-right: auto;
-justify-content: center;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
 }
 
 .blogPost {
-  width:40%;
+  width: 40%;
   align-items: center;
   flex-wrap: wrap;
-  padding:30px;
-  margin:20px;
+  padding: 30px;
+  margin: 20px;
   border-radius: 10px;
   border-color: black;
-  border-style:solid;
-  background-color: grey;
-  display:flex;
+  border-style: solid;
+  background-color: #007BA8;
+  display: flex;
 }
+
 
 .blogImage {
   margin-bottom: 30px;
-  width:100%;
-  height:auto;
+  width: 100%;
+  height: auto;
   border-radius: 10px;
   border-color: black;
   border-style: solid;
@@ -126,12 +208,12 @@ justify-content: center;
 
 .loader-circle {
   border: 20px solid whitesmoke;
-  border-top:20px solid rgb(44, 140, 194);
-  border-radius:50%;
-  width:150px;
-  height:150px;
+  border-top: 20px solid rgb(44, 140, 194);
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
   animation: spin 2s linear infinite;
-  display:flex;
+  display: flex;
 }
 
 h2 {
@@ -140,16 +222,16 @@ h2 {
 }
 
 .productImage {
-  width:100%;
+  width: 100%;
 }
 
 .cssButton {
-  display:flex;
+  display: flex;
   justify-content: center;
 }
 
 button {
-  background-color: rgb(44, 140, 194);
+  background-color: #007BA8;
   color: white;
   font-size: large;
   padding: 12px 20px;
@@ -159,14 +241,44 @@ button {
   margin-top: 20px;
   margin-bottom: 20px;
   align-items: center;
+  cursor: grab;
+}
+
+.backButton {
+  padding-left: 20px;
+  padding-top: 20px;
 }
 
 @keyframes spin {
-  0% {transform:rotate(0deg);}
-  100% {transform:rotate(360deg);}
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
+
+
+@media(max-width:1600px) {
+  .container{
+    width:100%;
+  }
+  
+  p {
+    margin:5px;
+    font-size:16px;
+
+  }
+
+}
+
 
 @media only screen and (max-width: 600px) {
+  
+  p {
+    margin:5px;
+    font-size:16px;
 
-
+  }
 }
+
