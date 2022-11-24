@@ -2,7 +2,6 @@ const querystring = document.location.search;
 const params = new URLSearchParams(querystring);
 const id = params.get("id");
 
-
 console.log(id);
 
 const detailsContainer = document.querySelector(".blogDetails");
@@ -46,8 +45,6 @@ async function fetchMedia(id) {
   } catch (error) {
     console.log(error);
   }
-
 }
-
 
 BlogPost(id);
