@@ -12,17 +12,17 @@ h1 {
   padding: 20px;
   border-bottom-width: 8px;
   border-bottom-style: solid;
-  border-color: #007BA8;
+  border-color: #007ba8;
 }
 
 p {
   color: black;
   text-align: center;
   padding: 30px;
-  margin-left:80px;
-  margin-right: 80px;
   line-height: 1.5;
   font-size: 25px;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 ul {
@@ -30,7 +30,7 @@ ul {
   margin: 0;
   padding: 10px;
   overflow: hidden;
-  background-color: #007BA8;
+  background-color: #007ba8;
   text-align: center;
 }
 
@@ -52,85 +52,95 @@ a {
 a:hover {
   border-radius: 10%;
   color: black;
-  text-decoration:underline;
+  text-decoration: underline;
   text-decoration-color: black;
 }
 
-/* #slider {
-  height:500px;
-  border: 1px solid white;
-  display:flex;
-  justify-content:center;
-}
-
-.container {
-  width:1600px;
-  margin:auto;
-}
-
-.subcontainer{
-  width:85%;
-  margin:auto;
-}
-
-.controller{
-  display:flex;
-  justify-content: space-between;
-}
-
-#controls i {
+footer {
+  text-align: center;
+  background-color: #007ba8;
   color:white;
-  font-size: 1rem;
-}
-
-.previous, .next{
-  padding:2px;
-  width:30px;
-  cursor: pointer;
-  border-radius:50%;
-  outline:none;
-  transition:0.7s ease-in-out;
-  border: 3px solid black;
-  background-color: rgb(44, 140, 194);
-}
-
-.previous:hover, .next:hover{
-  border: 3px solid gray;
-}
-
-.slide-img{
+  display:block;
+  position:sticky;
+  bottom:0;
   width:100%;
-  height:275px;
-  border:1px solid black;
-  background-position: center;
-  background-size: cover;
-  cursor:pointer;
-  display:flex;
+  height: 70px;
+  font-size:15px;
+  padding:10px;
+  border-style: solid;
+  border-color: black;
+}
+
+
+.championBlogPost {
+  border-style: solid;
+  border-color: #A69686;
   justify-content: center;
-  align-items: center;
-  transition:0.5s;
-} */
-
-.slide-img:hover {
-  box-shadow: 0 0 0 5px black;
 }
 
-.slide-img a{
-  transform:scale(0);
-  transition:0.8s;
-  font-size:1.5rem;
-  color:white;
-  opacity: 0;
+.slider-wrapper {
+  padding-top:30px;
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+  justify-content: center;
 }
 
-.slide-img:hover a {
-  opacity:1;
-  transform:scale(1);
+.slides-container {
+  width: 100%;
+  display: flex;
+  list-style: none;
+  border-style:solid;
+  scroll-behavior: smooth;
+  border-radius: 10px;
+  border-color:black;
 }
 
+.championImage2 {
+  width: 70%;
+  height:auto;
+  border-style: solid;
+  border-color: black;
+}
 
+.slide-arrow {
+  position: absolute;
+  display: flex;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 4rem;
+  background-color: black;
+  border: none;
+  width: 2rem;
+  font-size: 3rem;
+  padding: 0;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 100ms;
+}
 
+.slide-arrow:hover,
+.slide-arrow:focus {
+  opacity: 1;
+}
 
+#slide-arrow-prev {
+  left: 0;
+  padding-left: 0.25rem;
+  border-radius: 0 2rem 2rem 0;
+}
+
+#slide-arrow-next {
+  right: 0;
+  padding-left: 0.75rem;
+  border-radius: 2rem 0 0 2rem;
+}
+
+.slide {
+display:flex;
+flex: 1 0 100%;
+}
 
 input[type="text"],
 select,
@@ -155,7 +165,7 @@ textarea {
 }
 
 input[type="submit"] {
-  background-color: #007BA8;
+  background-color: #007ba8;
   color: white;
   font-size: large;
   padding: 12px 20px;
@@ -168,7 +178,7 @@ input[type="submit"] {
   border-radius: 5px;
   border-style: solid;
   border-color: black;
-  background-color: #A69686;
+  background-color: #a69686;
   padding: 20px;
   margin: 100px;
   border-radius: 2px;
@@ -192,10 +202,9 @@ input[type="submit"] {
   border-radius: 10px;
   border-color: black;
   border-style: solid;
-  background-color: #007BA8;
+  background-color: #007ba8;
   display: flex;
 }
-
 
 .blogImage {
   margin-bottom: 30px;
@@ -221,7 +230,7 @@ h2 {
   text-align: center;
 }
 
-.productImage {
+.championimage {
   width: 100%;
 }
 
@@ -231,7 +240,7 @@ h2 {
 }
 
 button {
-  background-color: #007BA8;
+  background-color: #007ba8;
   color: white;
   font-size: large;
   padding: 12px 20px;
@@ -258,27 +267,20 @@ button {
   }
 }
 
-
-@media(max-width:1600px) {
-  .container{
-    width:100%;
-  }
-  
-  p {
-    margin:5px;
-    font-size:16px;
-
-  }
-
-}
-
-
 @media only screen and (max-width: 600px) {
-  
-  p {
-    margin:5px;
-    font-size:16px;
+  h1 {
+    font-size: 30px;
+  }
 
+  p {
+    margin: 5px;
+    font-size: 16px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+
+  .blogPost {
+    width: 100%;
   }
 }
-

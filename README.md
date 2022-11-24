@@ -18,22 +18,9 @@ The home page should have a ‘Latest Posts’ section which uses a carousel (sl
 
 If images on the blog post page are clicked, a modal should appear giving the user a bigger view of that image. Clicking outside the image should hide the modal.
 
-### WordPress
 
-The content for your website will be stored on a WordPress installation used as a Headless CMS. It’s important to note that we are only using WordPress to provide an API and add content for the blog. You should not submit a link to a WordPress site, but build your website using HTML, CSS and JavaScript and making a call to the WordPress REST API to fetch the data. 
-
-The project has two aspects:
--	API from your WordPress installation
--	Your website built with HTML, CSS and JavaScript
-
-You will need to add at least 12 blogs for your website. You can use lorem ipsum for paragraphs if you need, but headings, images etc. should all make sense.
-
-Note that this is an exam, and therefore tutor support will be limited as per the study plan.
 
 ## Level 1 Process
-
-
-
 
 5.	Build your website using HTML, CSS and JavaScript making a call to the WordPress REST API to fetch your data.
 6.	Install Hotjar on your website.

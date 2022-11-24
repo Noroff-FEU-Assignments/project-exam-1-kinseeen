@@ -30,7 +30,7 @@ async function BlogPost(test) {
 
 function createHTML(champion, image) {
   detailsContainer.innerHTML = `<div class=championPost> <h1> ${champion.title.rendered} </h1>
-<img class=productImage img id= productImage src="${image}" </img> </class>
+<img class=championimage img id= championimage src="${image}" </img> </class>
 <div class="ChampionStory">  ${champion.content.rendered}  </div> </div>
 `;
 }
@@ -48,5 +48,6 @@ async function fetchMedia(id) {
   }
 
 }
+
 
 BlogPost(id);
