@@ -25,21 +25,46 @@ p {
   margin: 0 auto;
 }
 
-ul {
+.menuitems {
   list-style-type: none;
   margin: 0;
   padding: 10px;
   overflow: hidden;
   background-color: #007ba8;
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-li {
+ul {
+  list-style-type: none;
+  /* margin: 0; */
+  /* padding: 10px; */
+  overflow: hidden;
+  background-color: #007ba8;
+  text-align: center;
+  display: flex;
+}
+
+.slide {
+  display: flex;
+  flex: 1 0 100%;
+}
+
+.menuitemspecific {
   display: inline;
   float: left;
   padding-left: 30px;
   padding-right: 30px;
 }
+
+/* 
+li {
+  display: inline;
+  float: left;
+  padding-left: 30px;
+  padding-right: 30px;
+} */
 
 a {
   display: block;
@@ -59,27 +84,26 @@ a:hover {
 footer {
   text-align: center;
   background-color: #007ba8;
-  color:white;
-  display:block;
-  position:sticky;
-  bottom:0;
-  width:100%;
+  color: white;
+  display: block;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
   height: 70px;
-  font-size:15px;
-  padding:10px;
+  font-size: 15px;
+  padding: 10px;
   border-style: solid;
   border-color: black;
 }
 
-
 .championBlogPost {
   border-style: solid;
-  border-color: #A69686;
+  border-color: #a69686;
   justify-content: center;
 }
 
 .slider-wrapper {
-  padding-top:30px;
+  padding-top: 30px;
   position: relative;
   overflow: hidden;
   margin: auto;
@@ -87,18 +111,18 @@ footer {
 }
 
 .slides-container {
-  width: 100%;
+  /* width: 100%; */
   display: flex;
   list-style: none;
-  border-style:solid;
+  border-style: solid;
   scroll-behavior: smooth;
   border-radius: 10px;
-  border-color:black;
+  border-color: black;
 }
 
 .championImage2 {
   width: 70%;
-  height:auto;
+  height: auto;
   border-style: solid;
   border-color: black;
 }
@@ -135,11 +159,6 @@ footer {
   right: 0;
   padding-left: 0.75rem;
   border-radius: 2rem 0 0 2rem;
-}
-
-.slide {
-display:flex;
-flex: 1 0 100%;
 }
 
 input[type="text"],
@@ -282,5 +301,23 @@ button {
 
   .blogPost {
     width: 100%;
+  }
+
+  .slide {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .slider-wrapper {
+    padding: 2px;
+    justify-content: center;
+  }
+
+  .championImage2 {
+    width:100px;
+  }
+
+  h4 {
+    font-size: 20px;
   }
 }
