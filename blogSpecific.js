@@ -29,10 +29,39 @@ async function BlogPost(test) {
 
 function createHTML(champion, image) {
   detailsContainer.innerHTML = `<div class=championPost> <h1> ${champion.title.rendered} </h1>
-<img class=championimage img id= championimage src="${image}" </img> </class>
+<img class=championimage img id=championimage src="${image}">
 <div class="ChampionStory">  ${champion.content.rendered}  </div> </div>
+<div id="modalImage" class="modal">
+  <div class="modalContent">
+    <span class="close">&times;</span>
+    <img class=championimage img src="${image}">
+  </div>
+
+</div>
 `;
+
+  var modal = document.getElementById("modalImage");
+
+  var btn = document.getElementById("championimage");
+
+  var span = document.getElementsByClassName("close")[0];
+
+  btn.onclick = function () {
+    modal.style.display = "block";
+  };
+
+  span.onclick = function () {
+    modal.style.display = "none";
+  };
+
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  };
 }
+
+function imageClick() {}
 
 async function fetchMedia(id) {
   try {
