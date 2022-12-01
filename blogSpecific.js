@@ -29,7 +29,7 @@ async function BlogPost(test) {
 
 function createHTML(champion, image) {
   detailsContainer.innerHTML = `<div class=championPost> <h1> ${champion.title.rendered} </h1>
-<img class=championimage img id=championimage src="${image}">
+<img class=championimage img id=championimage src="${image}" alt= League of legends champion">
 <div class="ChampionStory">  ${champion.content.rendered}  </div> </div>
 <div id="modalImage" class="modal">
   <div class="modalContent">

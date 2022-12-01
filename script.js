@@ -86,7 +86,7 @@ async function fetchMoreBlogPosts(page) {
 
       slidesContainer.innerHTML += ` <div class = mySlides>
       <a href="blogSpecific.html?id=${id1}" style="width:33%">
-         <img class=blogImage src="${image}" alt="Image of champion"> </img>
+         <img class=blogImage src="${image}" alt="League of legends champion"> </img>
          <div class="champion">
          <h4> ${name1} </h4>
          </div>`;
