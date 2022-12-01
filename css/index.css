@@ -82,7 +82,7 @@ a:hover {
   text-decoration-color: black;
 }
 
-footer {
+/* footer {
   text-align: center;
   background-color: #007ba8;
   color: white;
@@ -95,7 +95,7 @@ footer {
   padding: 10px;
   border-style: solid;
   border-color: black;
-}
+} */
 
 .championBlogPost {
   border-style: solid;
@@ -111,7 +111,7 @@ footer {
   justify-content: center;
 }
 
-.slides-container {
+.slideContainer {
   /* width: 100%; */
   display: flex;
   list-style: none;
@@ -134,14 +134,12 @@ footer {
   top: 0;
   bottom: 0;
   margin: auto;
-  height: 4rem;
+  height: 5rem;
   background-color: black;
-  border: none;
-  width: 2rem;
-  font-size: 3rem;
+  width: 3rem;
+  font-size: 4rem;
   padding: 0;
-  cursor: pointer;
-  opacity: 0.5;
+  opacity: 0.6;
   transition: opacity 100ms;
 }
 
@@ -150,16 +148,16 @@ footer {
   opacity: 1;
 }
 
-#slide-arrow-prev {
+#slideArrowPrevious {
   left: 0;
   padding-left: 0.25rem;
-  border-radius: 0 2rem 2rem 0;
+  border-radius: 0rem 3rem 3rem 0rem;
 }
 
-#slide-arrow-next {
+#slideArrowNext {
   right: 0;
   padding-left: 0.75rem;
-  border-radius: 2rem 0 0 2rem;
+  border-radius: 3rem 0rem 0rem 3rem;
 }
 
 input[type="text"],
@@ -182,6 +180,7 @@ textarea {
   margin-bottom: 10px;
   text-decoration: underline;
   text-decoration-color: red;
+  font-weight:bold;
 }
 
 input[type="submit"] {
@@ -287,6 +286,23 @@ button {
   }
 }
 
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modalContent {
+  margin: 10%;
+  width: 80%;
+}
+
 @media only screen and (max-width: 600px) {
   h1 {
     font-size: 30px;
@@ -321,21 +337,10 @@ button {
   h4 {
     font-size: 20px;
   }
+
+  .slideOneText {
+    font-size: 20px;
+  }
 }
 
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.4);
-}
 
-.modalContent {
-  margin: 10%;
-  width: 80%;
-}

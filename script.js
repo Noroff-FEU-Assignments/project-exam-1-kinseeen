@@ -1,6 +1,6 @@
-var slidesContainer = document.getElementById("slides-container");
-var prevButton = document.getElementById("slide-arrow-prev");
-var nextButton = document.getElementById("slide-arrow-next");
+var slidesContainer = document.getElementById("slideContainer");
+var prevButton = document.getElementById("slideArrowPrevious");
+var nextButton = document.getElementById("slideArrowNext");
 var slide = document.querySelector(".slide");
 
 async function fetchSlides() {
@@ -47,22 +47,9 @@ async function fetchSlides() {
       `;
 
       slidesContainer.appendChild(slide);
-      //slide.appendChild(slidesContainer)
-      /* slidesContainer.innerHTML += `<div class="slide">
-     <a href="blogSpecific.html?id=${id0}">
-      <img class="championImage2" src="${image0}">
-      <div class=champion> <h4> ${name0} </h4></div>
-      <a href="blogSpecific.html?id=${id1}">
-      <img class="championImage2" src="${image1}">
-      <div class=champion> <h4> ${name1} </h4></div>
-      <a href="blogSpecific.html?id=${id2}">
-      <img class="championImage2" src="${image2}">
-      <div class=champion> <h4> ${name2} </h4></div>
-      </div>`; */
     }
   } catch (error) {
     slidesContainer.innerHTML = "An error has occured";
-    //carouselContainer.innerHTML = "An error has occured";
   }
 }
 
