@@ -119,14 +119,3 @@ function onRightClick() {
   const slideWidth = slide.clientWidth;
   slidesContainer.scrollLeft += slideWidth;
 }
-
-/* prevButton.addEventListener("click", () => {
-  const slideWidth = slide.clientWidth;
-  slidesContainer.scrollLeft -= slideWidth;
-});
-nextButton.addEventListener("click", () => {
-
-  console.log("click");
-  const slideWidth = slide.clientWidth;
-  slidesContainer.scrollLeft += slideWidth;
-}); */
