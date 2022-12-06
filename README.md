@@ -1,15 +1,43 @@
-## Project Exam 1
+Project exam 1
 
-## Goal
+The purpose of this project was to create a blog. 
 
-To put into practice the skills learned over your first year of studies.
 
-## Brief
-You have been tasked with creating a blog site. You can choose the design and topics covered on the blog, but it should have at least the following pages:
+This blog has the theme of league of legends. The purpose of this blog was to create a space where the user could read the league og legends lore. 
 
-## Level 1 Process
-.
+<ul>
+<li> Colorful and easy to navigate </li>
+<li> Target audience: Males </li>
+<li> interactive and fun </li>
+</ul>
 
-7.	Ask users to test your website, and adjust based on their feedback and any insights from Hotjar.
-8.	Write a report documenting your project (template provided in this repository).
-9.	Submit your report as a PDF and a link to both your Netlify deployment and your GitHub repo.
+
+Built With
+
+React.js
+Bootstrap
+visual studio code
+
+Getting Started Installing
+
+Clone the repo:
+
+git clone git@github.com:NoroffFEU/portfolio-1-example.git
+
+Install the dependencies:
+
+npm install
+
+Running
+
+To run the app, run the following commands:
+
+npm run start
+
+Contributing
+
+Make sure to open a pull request so code can be reviewed.
+
+Acknowledgments
+
+I would like to acknowledge my Fiance, who has helped me get through the year.
